@@ -1,0 +1,14 @@
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\bin\Release\net6.0\NorthwindDAL.deps.json
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\bin\Release\net6.0\NorthwindDAL.runtimeconfig.json
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\bin\Release\net6.0\NorthwindDAL.dll
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\bin\Release\net6.0\NorthwindDAL.pdb
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.csproj.AssemblyReference.cache
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.AssemblyInfoInputs.cache
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.AssemblyInfo.cs
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.csproj.CoreCompileInputs.cache
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.dll
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\refint\NorthwindDAL.dll
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.pdb
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\NorthwindDAL.genruntimeconfig.cache
+D:\Desktop\hw\hw\Services\NorthwindOrdersService\NorthwindDAL\obj\Release\net6.0\ref\NorthwindDAL.dll

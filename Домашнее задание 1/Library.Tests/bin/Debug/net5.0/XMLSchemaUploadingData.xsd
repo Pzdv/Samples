@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name ="typeId">
+		<xs:restriction base="xs:int">
+			<xs:minExclusive value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeName">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeNote">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="500" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeAutor">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="typeAutors">
+		<xs:sequence>
+			<xs:element type="typeAutor" name="Autor" maxOccurs="unbounded" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="typeCreationCity">
+		<xs:restriction base ="xs:string">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typePublishYear">
+		<xs:restriction base ="xs:int">
+			<xs:minInclusive value="1900" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typePageCount">
+		<xs:restriction base ="xs:int">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeISBN">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{3}-\d-\d{2}-\d{6}-\d" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typePrice">
+		<xs:restriction base ="xs:decimal">
+			<xs:minInclusive value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeInstanceCount">
+		<xs:restriction base ="xs:int">
+			<xs:minInclusive value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typePublishingHouse">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeNumber">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeDate">
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="1900-01-01" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeISSN">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{4}-\d{4}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeCountry">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeRegistrationNumber">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="^RE\d{6}|RE\d{6}\b-(19|20)\d{2}/\d{1,}$" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeFilingDate">
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="1950-01-01" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="typeInventor">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="typeInventors">
+		<xs:sequence>
+			<xs:element type="typeInventor" name="Inventor" maxOccurs="unbounded" minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="typePublishYearPatent">
+		<xs:restriction base="typePublishYear">
+			<xs:minInclusive value="1950" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="Book">
+		<xs:all>
+			<xs:element name="Id" type="typeId" />
+			<xs:element name="Name" type="typeName" />
+			<xs:element name="Note" type="typeNote" />
+			<xs:element name="PublishYear" type="typePublishYear" />
+			<xs:element name="Price" type="typePrice" />
+			<xs:element name="PageCount" type="typePageCount" />
+			<xs:element name="CreationCity" type="typeCreationCity" />
+			<xs:element name="PublishingHouse" type="typePublishingHouse" />
+			<xs:element name="InstanceCount" type="typeInstanceCount" />
+			<xs:element name="Autors" type="typeAutors" />
+			<xs:element name="ISBN" type="typeISBN" />
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="Newspaper">
+		<xs:all>
+			<xs:element name="Id" type="typeId" />
+			<xs:element name="Name" type="typeName" />
+			<xs:element name="CreationCity" type="typeCreationCity" />
+			<xs:element name="PublishingHouse" type="typePublishingHouse" />
+			<xs:element name="PublishYear" type="typePublishYear" />
+			<xs:element name="PageCount" type="typePageCount" />
+			<xs:element name="Note" type="typeNote" />
+			<xs:element name="Number" type="typeNumber" />
+			<xs:element name="Date" type="typeDate" />
+			<xs:element name="ISSN" type="typeISSN" />
+			<xs:element name="Price" type="typePrice" />
+			<xs:element name="InstanceCount" type="typeInstanceCount" />
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="Patent">
+		<xs:all>
+			<xs:element name="Id" type="typeId" />
+			<xs:element name="Name" type="typeName" />
+			<xs:element name="Inventors" type="typeInventors" />
+			<xs:element name="Country" type="typeCountry" />
+			<xs:element name="RegistrationNumber" type="typeRegistrationNumber" />
+			<xs:element name="FilingDate" type="typeFilingDate" />
+			<xs:element name="PublishYear" type="typePublishYearPatent" />
+			<xs:element name="PageCount" type="typePageCount" />
+			<xs:element name="Note" type="typeNote" />
+			<xs:element name="Price" type="typePrice" />
+		</xs:all>
+	</xs:complexType>
+
+	<xs:element name="LibraryStorage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Items">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Book" type="Book" maxOccurs="unbounded" minOccurs="0"/>
+							<xs:element name="Newspaper" type="Newspaper" maxOccurs="unbounded" minOccurs="0"/>
+							<xs:element name="Patent" type="Patent" maxOccurs="unbounded" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

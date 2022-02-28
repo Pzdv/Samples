@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+option csharp_namespace = "OrdersService";
+
+package greet;
+
+
+service NorthwindRPC {
+  // Sends a greeting
+  rpc GetOrders (GetOrdersRequest) returns (GetOrdersReply);
+  rpc GetOrder (GetOrderRequest) returns (GetOrderReply);
+  rpc CreateOrder(CreateOrderRequest) returns (CreateOrderReply);
+  rpc UpdateOrder(UpdateOrderRequest) returns (UpdateOrderReply);
+  rpc DeleteOrder(DeleteOrderRequest) returns (DeleteOrderReply);
+}
+
+message DeleteOrderReply{
+	string DeletingResult = 1;
+}
+
+message DeleteOrderRequest{
+	int32 id = 1;
+}
+
+message UpdateOrderReply{
+	string UpdatingResult = 1;
+}
+
+message UpdateOrderRequest{
+	string OrderJson = 1;
+}
+
+message CreateOrderRequest{
+	string OrderJson = 1;
+}
+
+message CreateOrderReply{
+	int32 CreatingResult = 1;
+}
+
+message GetOrdersRequest{
+
+}
+
+message GetOrdersReply{
+  string orders = 1;
+}
+
+message GetOrderRequest{
+	int32 id = 1;
+}
+
+
+message GetOrderReply{
+	string order = 1;
+}

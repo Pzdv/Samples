@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IGUAnheEeHiNH4I4fMqVe+acNXOnTT5+jOCHcb92E24Vc9DLJbO5ciFE+1MhULI/Js2ngmG7JIpFkJVGgCYjMQ==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\hw\\hw\\advanced c#\\Домашнее задание 1\\Library network\\Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pozde\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\pozde\\.nuget\\packages\\nlog\\4.7.13\\nlog.4.7.13.nupkg.sha512",
+    "C:\\Users\\pozde\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

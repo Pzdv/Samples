@@ -1,0 +1,15 @@
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.AssemblyInfoInputs.cache
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.AssemblyInfo.cs
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.csproj.CoreCompileInputs.cache
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\bin\Debug\net5.0\NLog.config
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\bin\Debug\net5.0\Library.deps.json
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\bin\Debug\net5.0\Library.dll
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\bin\Debug\net5.0\ref\Library.dll
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\bin\Debug\net5.0\Library.pdb
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.dll
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\ref\Library.dll
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.pdb
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.csproj.AssemblyReference.cache
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library_network.Properties.Resources.resources
+D:\Desktop\hw\hw\advanced c#\Домашнее задание 1\Library network\obj\Debug\net5.0\Library.csproj.GenerateResource.cache
