@@ -1,0 +1,198 @@
+/*
+color palettes
+#F5E6E8 - Lavander Blush
+#D5C6E0 - Languid Lavender 
+#AAA1C8 - Blue Bell
+#967AA1 - Purple Mountain Majesty
+#343434
+*/
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url(../fonts/Bebas_Neue.ttf);
+}
+@font-face {
+  font-family: "FiraCode";
+  src: url(../fonts/FiraCode-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "UnicaOne";
+  src: url(../fonts/UnicaOne-Regular.ttf);
+}
+
+/* Global styles
+-----------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "FiraCode";
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: white;
+}
+
+img {
+  width: 150px;
+}
+
+.content-wrap {
+  width: 500px;
+  margin: 0 auto;
+  /* padding: 40px 0; */
+}
+
+/* Profile
+-----------------------------------*/
+header {
+  background-color: #f5e6e8;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-family: "BebasNeue";
+  font-size: 3em;
+  font-style: normal;
+}
+header p:last-child {
+  margin: 0;
+}
+
+/* Projects
+-----------------------------------*/
+.projects {
+  background-color: #aaa1c8;
+}
+.projects-flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+.projects a {
+  background-color: #d5c6e0;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "UnicaOne";
+  font-weight: bold;
+  font-style: normal;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.projects a:hover {
+  background-color: hsla(275, 30%, 83%, 0.8);
+}
+h2 {
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+.project-item {
+  flex: 0 0 33%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  padding: 20px;
+  flex-basis: 385px;
+}
+
+.project-item img {
+  margin-right: 20px;
+  flex: 1;
+}
+.project-item article {
+  align-items: stretch;
+  flex: 1;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+.projects-header {
+  text-align: center;
+}
+.projects-footer p {
+  text-align: center;
+  margin: 0;
+}
+
+/* Work Experience
+-----------------------------------*/
+.work-experience {
+  background-color: #d5c6e0;
+}
+
+.job-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/* Education
+-----------------------------------*/
+.education {
+  background-color: #d5c6e0;
+}
+.education-desc {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.education img {
+  padding-right: 20px;
+}
+.education img {
+  align-self: stretch;
+}
+
+.education-header {
+  text-align: center;
+}
+
+/* Contact Info
+-----------------------------------*/
+footer {
+  background-color: #967aa1;
+  margin: 0;
+  padding: 50px 0;
+}
+
+footer a {
+  padding: 10px;
+}
+
+.contacts {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a:active {
+  color: rgb(0, 236, 253);
+}
+
+footer a:hover {
+  background-color: bisque;
+  border-radius: 8px;
+}
